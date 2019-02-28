@@ -7,6 +7,12 @@ This is a simple one-page landing page with pop-up modal windows if you need to 
 2. Header resizes on a scroll-down
 3. 6+ modal windows to store your content
 
+Look:
+![Main page]https://i.imgur.com/krMHix7.png
+
+Modals:
+![Modal windows]https://i.imgur.com/zHHbRUg.png
+
 **Examples on how to use the landing page:**
 - Create a quick page with information needed for the online training so that listeners could easily open all links in one place
 - Create a bookmark page with different groups of resources for yourself and friends
