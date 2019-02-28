@@ -1,0 +1,260 @@
+:root{
+  --bg-color-orange: #E95428
+}
+
+a {
+  color: var(--bg-color-orange);
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+.star {
+  color: var(--bg-color-orange);
+  text-align: center;
+  display: table;
+  margin: auto;
+  font-size: 24px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+body{
+  font-family: serif;
+  margin: 0 0 0 0;
+  border-style: solid;
+  border-width: 0px 15px 5px 15px;
+  border-color: var(--bg-color-orange);
+}
+
+.internal_border{
+  border-style: solid;
+  border-width: 60px 15px 0px 15px;
+  border-color: var(--bg-color-orange);
+  margin: -60px -10px -56px -10px;
+  border-radius: 100px 100px 100px 100px;
+  z-index: -1;
+}
+
+/* adding a new font family */
+@font-face {
+  font-family: BebasNeue;
+  src: url(./fonts/BebasNeue-Light.ttf);
+}
+
+/* Main Heading bar */
+.headbar {
+  background-color: var(--bg-color-orange);
+  position: fixed;
+  color: white;
+  height: 100px;
+  width: 100%;
+  z-index: 5;
+}
+
+#headspacer {
+  height: 100px;
+}
+
+/* Main Heading Bar hexagon background */
+.headbar:after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('img/hex_background.png');
+    background-size: 23%;
+    background-repeat: repeat-x;
+    margin-left: -15px;
+}
+
+/* Text in the head bar after resize */
+.headbar.smaller {
+  background-color: var(--bg-color-orange);
+  position: fixed;
+  color: white;
+  height: 60px;
+  width: 100%;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+/* Text in the head bar */
+.headtext {
+  font-family: 'BebasNeue';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 5px;
+}
+
+.headtext a {
+  /* Removing decorations for the header link */
+  text-decoration: none;
+  color: white;
+  z-index: 1;
+}
+.headtext a:hover{
+  font-weight: 900;
+}
+
+/* Your Logo */
+.logo {
+  height: 100px;
+  padding-right: 40px;
+}
+
+/* Main content container*/
+.main {
+  width: 75%;
+  margin: auto;
+  font-size: 24px;
+}
+
+/* Footer bar */
+.footbar {
+  background-color: var(--bg-color-orange);
+  text-align: center;
+  justify-content: center;
+  color: white;
+  height: 60px;
+  width: 100%;
+}
+
+/* Text settings in the footer bar */
+.foottext {
+  font-family: 'BebasNeue';
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Class for Tiles Table style */
+.tiles {
+  width: 100%;
+}
+
+.tiles td {
+  text-align: center;
+  height: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.tiles a {
+  color: var(--bg-color-orange);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.cell {
+  border: 2px solid transparent;
+  margin: -10px auto;
+  height: 80%;
+  width: 80%;
+  opacity: 0.85;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+.cell:hover {
+  border-style: dotted;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: var(--bg-color-orange);
+  opacity: 1;
+  transition:opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.cell img {
+    max-width: 80%;
+    max-height: 150px;
+    margin-bottom: -20px;
+}
+
+/* Restyling bullet points with our orange color */
+ul li {
+  list-style: none;
+  padding-top: 5px;
+}
+
+ul li::before{
+  content: "\2023";
+  position: relative;
+  font-size: 1.1em;
+  color: var(--bg-color-orange);;
+}
+
+/* Modal window style */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.modal::-webkit-scrollbar { width: 0 !important }
+
+/* Modal content box*/
+.modal-content {
+  font-family: Times;
+  font-size: 18px;
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 1px solid #888;
+  width: 75%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--bg-color-orange);
+  border-radius: 10px
+}
+
+.modal-content img {
+  border-style: solid;
+  border-color: var(--bg-color-orange);
+  border-width: 1px;
+  border-radius: 10px
+
+}
+
+.modal_heading {
+  font-size: 2em;
+  font-family: 'BebasNeue';
+  font-weight: bold;
+}
+
+.img_center {
+  display: block;
+  margin: auto;
+}
+
+/* Close button inside the modal window */
+.close_btn {
+  color: var(--bg-color-orange);
+  float: right;
+  font-size: 52px;
+  font-weight: normal;
+}
+
+.close_btn:hover,
+.close_btn:focus {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}

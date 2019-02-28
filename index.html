@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Landing Page</title>
+    <link href="landing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Heada -->
+  <div id="headbar" class="headbar headtext">
+    <a href="#top">Welcome to the Simple Landing Page !</a>
+    <img class="logo" src="https://via.placeholder.com/150">
+  </div>
+
+
+  <!-- Here we go! -->
+  <div id="headspacer">&nbsp;</div>
+
+  <div class="internal_border">
+    <div class="main">
+      <a name="top"></a>
+
+      <!-- Star separator -->
+      <span class="star">
+        [ <i class="fas fa-star"></i> ]
+      </span>
+
+      <p style="font-weight: bold; margin-top:-20px; text-align: center; font-size: 28px">Welcome to my simple landing!</p>
+      <p>
+        Below you can find:
+        <ul>
+          <li> Some content
+          <li> Even more content
+          <li> Very interesting content
+          <li> Wow! So much content!
+          <li> Boring links
+        </ul>
+      </p>
+      <p>
+        Some note here to keep you going...
+      </p>
+
+    <!-- Table with shortlinks shortcuts -->
+      <table class="tiles">
+        <tr>
+          <td>
+            <div class="cell">
+              <a id="btn_1" onclick=openModal("modal_1")>
+                  <img src="https://via.placeholder.com/150" alt="Item">
+                  <p>Item</p>
+              </a>
+            </div>
+          </td>
+
+          <td>
+            <div class="cell">
+              <a id="btn_2" onclick=openModal("modal_2")>
+                <img src="https://via.placeholder.com/150" alt="Item">
+                <p>Item</p>
+              </a>
+            </div>
+          </td>
+
+          <td>
+            <div class="cell">
+              <a id="btn_3" onclick=openModal("modal_3")>
+                  <img src="https://via.placeholder.com/150" alt="Item">
+                  <p>Item</p>
+              </a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cell">
+              <a id="btn_4" onclick=openModal("modal_4")>
+                <img src="https://via.placeholder.com/150" alt="Item">
+                <p class="text-center">Item</p>
+              </a>
+            </div>
+          </td>
+
+          <td>
+            <div class="cell">
+              <a id="btn_5" onclick=openModal("modal_5")>
+                <img src="https://via.placeholder.com/150"alt="Item">
+                <p class="text-center">Item</p>
+              </a>
+            </div>
+          </td>
+
+          <td>
+            <div class="cell">
+              <a id="btn_6" onclick=openModal("modal_6")>
+                <img src="https://via.placeholder.com/150" alt="Item">
+                <p class="text-center">Item</p>
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <!-- Table ends -->
+    </div>
+
+  <!-- Modal content -->
+    <div id="modal_1" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">First item</span>
+            <p>
+        		    <strong>First Item</strong> - very important!
+        	  </p>
+            <img src="https://via.placeholder.com/550">
+            <p style="text-align: left">
+          		Some links maybe:<br>
+              <a href="#">link</a><br>
+              <a href="#">link</a><br>
+              <a href="#">link</a><br>
+        	  </p>
+        		<p>
+          		Some more info:
+              <ol>
+            		<li>First step<br>
+            		<li>Second step<br>
+            		<li>Third step<br>
+              </ol>
+        		</p>
+        		Example on something:<br>
+        		<img src="https://via.placeholder.com/550" style="width:100%">
+        	  <br>
+      </div>
+    </div>
+
+    <div id="modal_2" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">One more item</span>
+        <p>
+          <img src="https://via.placeholder.com/250" style="width:50%"><br><br>
+            <strong>My favourite item</strong> - it is my most favourite item!<br>
+        </p>
+        <p>
+          Like my item here: <a href="#">https://likeme.like</a>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div id="modal_3" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">One more item</span>
+        <p>
+          <img src="https://via.placeholder.com/250" style="width:50%"><br><br>
+            <strong>My not so favourite item</strong> - it is my item!<br>
+        </p>
+        <p>
+          Like my item here: <a href="#">https://likeme.like</a>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div id="modal_4" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">One more item</span>
+        <p>
+          <img src="https://via.placeholder.com/250" style="width:50%"><br><br>
+            <strong>My not so favourite item</strong> - it is my item!<br>
+        </p>
+        <p>
+          Like my item here: <a href="#">https://likeme.like</a>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div id="modal_5" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">One more item</span>
+        <p>
+          <img src="https://via.placeholder.com/250" style="width:50%"><br><br>
+            <strong>My not so favourite item</strong> - it is my item!<br>
+        </p>
+        <p>
+          Like my item here: <a href="#">https://likeme.like</a>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div id="modal_6" class="modal">
+      <div class="modal-content">
+        <span class="modal_heading">One more item</span>
+        <p>
+          <img src="https://via.placeholder.com/250" style="width:100%"><br><br>
+            <strong>My not so favourite item</strong> - it is my item!<br>
+        </p>
+        <p>
+          Like my item here: <a href="#">https://likeme.like</a>
+        </p>
+        <br>
+      </div>
+    </div>
+
+
+  </div> <!--  internal border div ends here -->
+  <!-- Modal content ends -->
+
+  <!-- Star separator -->
+  <br>
+  <br>
+  <span class="star">
+    [ <i class="fas fa-star"></i> ]
+  </span>
+
+</div>
+
+<!-- Foota -->
+<div class="footbar foottext">
+  copyright &copy; shad0wrunner 2019
+</div>
+
+<script src="func.js"></script>
+</body>
+</html>
